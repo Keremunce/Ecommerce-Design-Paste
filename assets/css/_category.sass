@@ -1,0 +1,45 @@
+.Category__Banner
+	display: flex
+	align-items: center
+	margin: 2rem auto
+	position: relative
+	&__Browse
+		font-size: 1.7rem 
+		font-weight: bold
+.All_Categories
+	display: flex
+	margin: 0 1rem
+	align-items: center
+
+.All_Categories p:first-child
+	font-size: .8rem
+	color: $secondary-clr
+
+.Category__BoxDiv
+	display: flex
+	align-items: stretch
+	&_box
+		text-align: center
+		background-color: hsl(0, 0%, 97%)
+		padding: 1rem  1rem
+		border-radius: 10px
+		width: 14%
+		cursor: pointer
+		transition: .5s
+	&_box img 
+		width: 80px!important
+		height: 90px
+	&_box p 
+		font-weight: bold
+		margin-top: 2rem
+
+	&_box + &_box
+		margin-left: 1rem
+	&_box:hover
+		background-color: #fff
+		box-shadow: 0px 15px 20px 10px hsl(0, 0%, 80%)
+.Category__Banner a +  a
+	margin-left: .8rem
+
+.Categorys
+	margin: 1rem 1rem 0 1rem

@@ -1,0 +1,73 @@
+.expires
+	display: inline-flex
+	padding: .5rem .7rem
+	background-color: hsl(11,97%,58%)
+	margin-left: 3rem
+	border-radius: 5px
+	color: #fff
+	font-size: .8rem
+
+.expires .far
+	margin: .1rem .5rem 0 0
+	width: 20px
+
+.border-container 
+	width: 100%
+	height: 5px
+	background-color: hsl(0, 1%, 85%)
+.border 
+	width: 25%
+	height: 5px
+	background: #fab629
+
+// ======================= 
+// Signup
+// ======================= 
+
+.signup
+	background: linear-gradient(45deg, #ec008c, #fc6767) 
+	width: 24%
+	padding: 3rem
+	height: fit-content
+	margin: 7rem 0
+	&__Text
+		text-align: center
+		margin: 0 0 2rem 0
+	&__Text p:nth-child(1) //first-child
+		font-size: 3rem
+		font-weight: bold
+		color: 	hsl(41, 92%, 53%)
+	&__Text p:nth-child(2) 
+		color: #333333
+
+
+.signup form input:not(:nth-child(4))
+	padding: .5rem .5rem .5rem 2rem
+	border-radius: 5px
+	// border: 1px solid $secondary-clr
+	border: none
+	width: 100%
+	position: relative
+
+
+
+.fontuser + .fontuser
+	margin-top: .3rem
+.signup form input:nth-child(4)
+	margin: 1rem 0rem
+	padding: .8rem 1rem  
+	font-weight: bold
+	background-color: hsl(40,95%,57%)
+	border: none
+	border-radius: 5px
+
+.fontuser 
+	position: relative
+.fontuser input:focus
+	border: 2px solid #999999 !important
+	
+.fontuser i
+	position: absolute
+	left: 5px
+	top: 10px
+	color: gray

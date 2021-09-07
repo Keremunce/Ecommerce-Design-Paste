@@ -1,0 +1,44 @@
+{
+	"products": [
+	  {
+		"image": "https://i.hizliresim.com/iag7dog.jpg",
+		"name": "Product-1 gray watch",
+		"isAvailable": true,
+		"isEligible": true,
+		"price": "99.90",
+		"stock": 25
+
+	  },
+	  {
+		"image": "https://i.hizliresim.com/3j1mvhh.jpg",
+		"name": "Product-2 Headpset",
+		"seller": "MoKo",
+		"isAvailable": true,
+		"isEligible": false,
+		"price": "16.90",
+		"stock": 25
+
+	  },
+	  {
+		"image": "https://i.hizliresim.com/b8aotmj.jpg",
+		"name": "Product-3 Red nike shoe",
+		"seller": "MoKo",
+		"isAvailable": true,
+		"isEligible": true,
+		"price": "28.76",
+		"stock": 25
+
+	  },
+	  {
+		"image": "https://i.hizliresim.com/4tokkw4.jpg",
+		"name": "Product-4 gray sunglasses",
+		"seller": "MoKo",
+		"isAvailable": true,
+		"isEligible": true,
+		"price": "28.76",
+		"stock": 25
+
+	  }
+	]
+
+}

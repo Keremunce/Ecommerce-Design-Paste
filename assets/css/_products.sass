@@ -1,0 +1,214 @@
+.TopSaverToday
+	&__div
+		display: flex
+		justify-content: space-evenly
+		margin-bottom: 3rem 
+		&_Box
+			border-radius: 5px
+			padding: .7rem
+			border: none
+			width: 30%
+			&:hover
+				// border: 1px solid hsl(0,0%,89%)
+				// transition: 1s
+		&_Box + &_Box
+			margin-left: 1rem
+	&__img img
+		height: 150px
+	&__Text
+		margin: 2rem 0 1rem 0
+		line-height:  1.5rem
+	&__Text p:nth-child(1)
+		font-weight: bold
+	&__Text p:nth-child(2)
+		font-size: .8rem	
+	&__Text p:nth-child(8)
+		font-size: .7rem
+		color: $secondary-clr
+
+.inner
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 0
+    box-sizing: border-box
+    height: 0
+    border-bottom: 3px solid transparent
+    border-left: 3px solid transparent
+    transition: all .8s ease
+
+  &::after
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: 0
+    box-sizing: border-box
+    height: 0
+    border-top: 3px solid transparent
+    border-right: 3px solid transparent
+    transition: all .8s ease
+
+.inner_Box
+  width: 30%
+  transition: 1s
+  height: fit-content
+  &:hover
+    height: 530px
+    .inner
+      &::after, &::before
+        border-color: $theme-clr
+        width: 100%
+        height: 100%
+
+    transform: scale(1.1)
+
+    .Cartbutton__Div
+      visibility: visible
+      opacity: 1
+
+.inner_Box + .inner_Box
+  margin-left: 1rem
+
+.Img_Box img
+  height: 150px
+/* =======================
+
+.StarChecked 
+  color: orange
+
+.fa-star
+  font-size: .6rem
+
+.d-flex
+  display: flex
+.Box
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+  background: white
+  padding: 1rem
+
+.inner
+  width: 100%
+  position: relative
+
+.Bottom_Section
+  padding: .5rem
+
+/*================= TEXT  ====================
+
+.Text p
+  margin: 1rem 0 1rem 0
+  &:nth-child(1)
+    font-weight: 600
+
+  &:nth-child(2)
+    font-weight: 400
+    font-size: .8rem
+    color: hsl(200, 79%, 40%)
+
+.price
+  color: 	$money-clr
+  font-weight: 600
+
+.Border_Div
+  width: 100%
+  background-color: hsl(0, 0%, 50%)
+  height: 5px
+  position: relative
+
+.Border
+  width: 25%
+  background-color: $theme-clr
+  height: 5px
+  position: absolute
+
+.totalDiv
+  color: 	$money-clr
+  display: flex
+  flex-wrap: nowrap
+  font-weight: 500
+  align-items: center
+
+/*================= TEXT END ====================
+
+/*=================  Cartbutton__Div ====================
+
+.input-group_Div
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  align-content: center
+  justify-content: center
+  align-items: center
+  width: 100%
+
+.input-group
+  width: 40%
+  margin: 0 1rem 0 0
+  position: relative
+  border: 1px solid hsl(0, 0%, 70%)
+  border-radius: 3px
+  display: flex
+  padding: .5rem
+  justify-content: center
+  align-items: center
+  flex-wrap: nowrap
+
+.input-group-field input
+  width: 100%
+  border: none
+  text-align: center
+
+input
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+.button-minus
+  left: 0
+
+.button-plus
+  right: 5
+
+.input-group-button button
+  border: none
+  outline: none
+  background-color: transparent
+  cursor: pointer
+
+/* =========================INPUT==============================
+
+.Cartbutton__Div
+  width: 100%
+  visibility: hidden
+  opacity: 0
+  transition: .5s
+  z-index: 5
+  position: relative
+
+.AddCart_Div
+  text-align: center
+  margin: 2em auto 1em auto
+
+.AddCartBtn
+  padding: .6rem 2rem
+  background-color: $theme-clr
+  opacity: .6
+  font-size: 600
+  text-align: center
+  border-radius: 5px
+  cursor: pointer
+  transition: .5s
+  &:hover
+    opacity: 1
+
+.totalDiv
+	color: limegreen
+	font-size: .7rem
+	display: flex
+  width: 50%
+
+/*=================  Cartbutton__Div END====================

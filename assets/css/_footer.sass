@@ -1,0 +1,107 @@
+.fa-rocket
+    font-size: 1.5rem
+    color:  $theme-clr  
+footer
+    backgorund-image: white
+.footerHeader
+    border-bottom: 1px solid $secondary-clr
+    padding: 0 0 3rem 0
+    margin: 0 0 4rem 0
+.footerIcon
+    &_Div
+        display: flex
+        justify-content: space-evenly
+        &_Box
+            display: flex
+            align-items: center
+    &_Text
+        margin: 0 0 0 1rem
+    &_Text p:first-child
+        font-weight: 600
+.footerMain
+    display: flex
+    border-bottom: 1px solid $secondary-clr
+    justify-content: space-evenly
+    align-items: stretch
+    padding: 0 0 3rem 0
+    &_Sidebar
+        width: 20%
+    &_Sidebar p:first-child
+        font-weight: 600
+    &_Sidebar p:nth-child(2)
+        margin: 1rem 0 1rem 0
+
+
+.SubDiv
+    position: relative 
+    display: flex
+    margin: 2rem 0 0 0
+
+.SubDiv .inputundivi::before 
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900 
+    content: "\f0e0"
+    position: absolute
+    font-size: 1rem
+    top: 25%
+    left: 4%
+    color: $secondary-clr
+    z-index: 1
+
+.SubDiv input
+    padding: .7rem 0 .7rem 2rem
+    border: 1px solid hsl(0, 0, 80%)
+    border-radius: 2px
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+
+
+
+.SubDiv button
+    padding: .3rem .6rem
+    border: none
+    background-color: $theme-clr
+    border-radius: 2px 
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    outline-color: hsl(0, 0, 80%)
+    cursor: pointer
+
+.Contact
+    display: flex
+    align-items: center
+    & p:nth-child(3)
+        font-weight: 600
+    &_icon
+        margin: 0 1rem 0 0
+
+.d-flex-col a:hover 
+    color: $theme-clr
+    transition: .5s
+    cursor: pointer
+
+.footerBottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2rem 0 0 0
+.StayConnected
+    display: inline-flex
+    align-items: center
+.SIcons_Div
+    width: 12px
+    display: inline-flex
+    cursor: pointer
+    margin: 0 0 0 .5rem
+.fa-facebook-f:hover
+    color: blue
+    transition: .5s
+.fa-twitter:hover
+    color: blue
+    transition: .5s
+.fa-google-plus-g:hover
+    color: red
+    transition: .5s
+.fa-youtube:hover
+    color: red
+    transition: .5s

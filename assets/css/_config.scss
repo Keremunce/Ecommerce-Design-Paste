@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+$secondary-clr: hsl(209,10%,53%);
+$input-focus-clr: hsl(34deg ,20%, 86%);
+$theme-clr: hsl(40, 95%, 57%);
+$money-clr: hsl(150, 78%, 31%);
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+// GRID
+.grid{
+  display: grid;
+  grid-template-areas: "header header header" "section section section" "article article article" 
+  "Featured Featured Featured" "TopSaverToday TopSaverToday TopSaverToday" "main main main" 
+  "footer footer footer"    ;
+  grid-template-rows: auto auto auto auto 680px;
+  grid-gap: 3rem;
+}
+main {
+  grid-area: main;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: hsl(0, 0%, 90%);
+  padding: 0 0 4em 0;
+}
+
+header {
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+article {
+  grid-area: article ;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+section {
+  grid-area: section ;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.Featured{
+  grid-area: Featured ;  
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.TopSaverToday{
+  grid-area: TopSaverToday ;  
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+footer{ 
+  grid-area: footer;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+main , header , article , section , .Featured , .TopSaverToday{
+  margin-top: 2rem;
+}
+// GRID END
+
+
+.text-center{
+  text-align: center;
+}
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.m-y-2{
+  margin: 2rem 0;
+}
+.smallText{
+  font-size: .8rem;
+  color: $secondary-clr;
+}
+.smallText-white{
+  font-size: .8rem;
+  color: white;
+}
+.black{
+  color: black;
+}
+
+img{
+  width: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $secondary-clr; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $theme-clr; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0, 80%); 
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
