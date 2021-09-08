@@ -33,17 +33,42 @@
 				</div>
 
 				<div class="searchDiv">
-					<form class="search_bar">
-					  <div class="search_dropdown" >
+					<div class="search_Dropdown">
+						<a class="AllCategories" >
+							All Categories 
+							<img src="assets/img/arrow-down.svg">
+						</a>
+
+						<ul class="AllCategories_DD_ul" >
+							<li>Menu</li>
+							<li>Menu</li>
+							<li>Menu</li>
+							<li>Menu</li>
+						</ul>
+					</div><!--search_Dropdown-->
+
+					<form class="searchForm">
+						<div>
+							<input type="search" placeholder="Search for anything...">
+							<button type="submit"><i class="fa fa-search"></i></button>
+								<!-- <img src="assets/img/search.svg"> -->
+						</div>
+					</form>
+				</div><!-- searchDiv -->
+
+
+<!-- 				
+				<div class="searchDiv">
+					<div class="search_dropdown" >
 					    <span>All Categories <i class="fas fa-angle-down"></i></span>
-
-					  </div>
-
-					  <input type="text" placeholder="Search for anything" />
-
+					</div>
+					<form class="search_bar">
+						<div>
+							<input type="text" placeholder="Search for anything" />
+						</div>
 					  <button type="submit" value="Search"></button>
 					</form>
-				</div>
+				</div> -->
 
 				<div class="telnumberDiv">
 					<p>8 800 332 65-65 </p>
@@ -169,7 +194,7 @@
 	<article>
 		<div class="Category__Banner container">
 			<p class="Category__Banner__Browse">Browse by Category</p> 
-			<a class="All_Categories">
+			<a class="All_Categories" href="#">
 				<p>All Categories</p>
 				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 					width="15" height="15"
@@ -223,7 +248,7 @@
 		<div class="container">
 			<div class="Category__Banner container">
 				<p class="Category__Banner__Browse">Featured Brands</p> 
-				<a class="All_Categories">
+				<a class="All_Categories" href="#">
 					<p>All Offers</p>
 					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 						width="15" height="15"
@@ -283,7 +308,7 @@
 
 	<div class="TopSaverToday">
 		<div class="container d-flex">
-			<div style="width: 76%">
+			<div  class="w-76">
 				<div class="Category__Banner container">
 					<p class="Category__Banner__Browse">Top Saver Today</p> 
 					<a class="All_Categories" href="#">
@@ -516,7 +541,7 @@
 				</div><!-- TopSaverToday__div -->
 				
 			
-			</div> <!-- width 76%-->
+			</div> <!-- w-76-->
 
 			<div class="signup">
 				<div class="signup__Text">

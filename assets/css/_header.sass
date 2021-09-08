@@ -6,77 +6,137 @@
 
 .logoDiv
 	width: 15%
+.AllCategories
+	cursor: pointer
+.AllCategories img
+	width: 12px
 .searchDiv
-	width: 40%
+	display: inline-flex
+	align-items: center
+	border: 1px solid hsl(0, 0, 80%)
+	border-radius: 5px 
 
-// .cartDiv
-// 	width: 13.7%	
-
-.search_bar
-	background: hsl(0, 0%, 95%)
-	border: none
-	border-radius: 3px
-	// box-shadow: 0 0 3px #ccc
+.search_Dropdown
+	border-right: 1px solid hsl(0, 0, 80%)
+	padding: 0 1em
+	margin: 0 1em 0 0
 	position: relative
-	width: 100%
-	padding: 0 3rem
-	font-family: 'Source Sans Pro', sans-serif
 
-input[type=text]
-	border: none
-	box-shadow: none
-	font-weight: 600
-	font-size: .9em
-	width: 100%
-	padding: 1em 0 1em 6.5rem 
-	margin: 0
-	overflow: hidden
-	background: transparent
-
-button[type=submit]
-	background: transparent
-	border: none
-	width: 10%
-	
+.AllCategories_DD_ul
+	display: none
+	background-color: #fff
 	position: absolute
-	top: -1px
-	right: -1px
-	bottom: -1px
-	border-radius: 0 3px 3px 0
-	margin: 0
-	user-select: none
-
-	&:after
-		content: ''
-		position: absolute
-		top: 18%
-		right: 0
-		bottom: 22%
-		left: 4%
-		background: url("../img/search.svg") no-repeat center center
-		width: 15px
-		background-size: contain
-
-
-.search_dropdown
-	font-weight: 600
-	font-size: .9em
-	background: transparent
-	color: #555
+	box-shadow: -5px 8px 15px hsl(0, 0, 70%)
 	padding: 1rem
-	border-radius: 2px 0 0 2px
+	z-index: 5
+	margin: .7em 0 0 0 
+	border: none
 	position: absolute
-	top: 0
 	left: 0
-	bottom: 0
-	user-select: none
-	box-sizing: content-box
-	text-align: center
-	display: flex
+	width: 100%
+
+
+
+.searchForm > div > input
+  padding: 10px
+  font-size: 17px
+  border: 1px solid grey
+  float: left
+  width: 80%
+  background: transparent
+  border: none
+  outline: none
+
+
+.searchForm > div >  button
+  float: left
+  width: 20%
+  padding: 10px
+  background: transparent
+  color: white
+  font-size: 17px
+  border: none
+  border-left: none
+  cursor: pointer
+
+
+.searchForm > div >  button:hover 
+  background: #fbe250
+
+
+.searchForm > div >  button::after 
+  content: ""
+  clear: both
+  display: table
+.fa-search
+  color: black
 	
-.search_dropdown span
-	padding-right: 10px 
-	border-right: 1px solid hsl(0, 0%, 70%)
+// .searchDiv
+// 	position: relative
+// .search_bar
+// 	background: hsl(0, 0%, 95%)
+// 	border: none
+// 	border-radius: 3px
+// 	position: relative
+// 	width: 100%
+// 	padding: 0 3rem
+// 	font-family: 'Source Sans Pro', sans-serif
+
+// input[type=text]
+// 	border: none
+// 	box-shadow: none
+// 	font-weight: 600
+// 	font-size: .9em
+// 	width: 100%
+// 	padding: 1em 0 1em 6.5rem 
+// 	margin: 0
+// 	overflow: hidden
+// 	background: transparent
+
+// button[type=submit]
+// 	background: transparent
+// 	border: none
+// 	width: 10%
+	
+// 	position: absolute
+// 	top: -1px
+// 	right: -1px
+// 	bottom: -1px
+// 	border-radius: 0 3px 3px 0
+// 	margin: 0
+// 	user-select: none
+
+// 	&:after
+// 		content: ''
+// 		position: absolute
+// 		top: 18%
+// 		right: 0
+// 		bottom: 22%
+// 		left: 4%
+// 		background: url("../img/search.svg") no-repeat center center
+// 		width: 15px
+// 		background-size: contain
+
+
+// .search_dropdown
+// 	font-weight: 600
+// 	font-size: .9em
+// 	background: transparent
+// 	color: #555
+// 	padding: 1rem
+// 	border-radius: 2px 0 0 2px
+// 	position: absolute
+// 	top: 0
+// 	left: 0
+// 	bottom: 0
+// 	user-select: none
+// 	box-sizing: content-box
+// 	text-align: center
+// 	display: flex
+	
+// .search_dropdown span
+// 	padding-right: 10px 
+// 	border-right: 1px solid hsl(0, 0%, 70%)
 
 
 .fa-angle-down

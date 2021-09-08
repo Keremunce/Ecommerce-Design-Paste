@@ -144,3 +144,15 @@ let data = fetch("data.json")
     $(".product-4").attr("src", data.products[3].image);
     
   })
+
+// ALL CATEGORIES
+
+  $(document).ready(function(){
+    $(".AllCategories").click(function(){
+      
+      $(".AllCategories_DD_ul").css("opacity","1");
+      $(".AllCategories_DD_ul").css("visibility", "visible");
+      $(".AllCategories_DD_ul").slideToggle("slow");
+    });
+  });
+// ALL CATEGORIES
