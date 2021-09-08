@@ -11,8 +11,7 @@
 	  },
 	  {
 		"image": "https://i.hizliresim.com/3j1mvhh.jpg",
-		"name": "Product-2 Headpset",
-		"seller": "MoKo",
+		"name": "Product-2 Headset",
 		"isAvailable": true,
 		"isEligible": false,
 		"price": "16.90",
@@ -22,7 +21,6 @@
 	  {
 		"image": "https://i.hizliresim.com/b8aotmj.jpg",
 		"name": "Product-3 Red nike shoe",
-		"seller": "MoKo",
 		"isAvailable": true,
 		"isEligible": true,
 		"price": "28.76",
@@ -32,10 +30,9 @@
 	  {
 		"image": "https://i.hizliresim.com/4tokkw4.jpg",
 		"name": "Product-4 gray sunglasses",
-		"seller": "MoKo",
 		"isAvailable": true,
 		"isEligible": true,
-		"price": "28.76",
+		"price": "99.96",
 		"stock": 25
 
 	  }
